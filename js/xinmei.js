@@ -114,7 +114,7 @@ $('input[type="button"]').click(function(){
         //if($('input[name=agree]')[0].checked){
 			$.ajax({
 				type: "POST",
-				url: "https://songxinxing.github.io/phone_form/data/save.php?callback=?",
+				url: "https://songxinxing.github.io/phone_form/data/save.php",
 				dataType:'jsonp',
 				async : false,
 				contentType: "application/x-www-form-urlencoded; charset=utf-8",
