@@ -141,7 +141,7 @@ $('input[type="button"]').click(function(){
 				window.location.href="success.html";
 			});*/
 		//}
-	window.location.href(success.html);
+	window.location.href="success.html";
     }
 });
 //表单获取交点时 清除提交失败按钮
