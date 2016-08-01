@@ -1,5 +1,5 @@
 <?php
-header('Content-Type:text/plain,charset=utf-8');
+header('Content-Type:text/plain,charset=utf-8,Access-Control-Allow-Origin:https://songxinxing.github.io/phone_form/xinmei.html');
 $userName=$_REQUEST['userName'];
 $IDNumber=$_REQUEST['IDNumber'];
 $telPhone=$_REQUEST['telPhone'];
