@@ -116,7 +116,9 @@ $('input[type="button"]').click(function(){
 				type: "POST",
 				url: "https://songxinxing.github.io/phone_form/data/save.php?callback=?",
 				dataType:'jsonp',
-				data: "userName="+$('#form_userName').val()+"&IDNumber="+$('#form_IDNumber').val()+"&telPhone="+$('#form_telPhone').val()+"&email="+$('#form_email').val()+"&company="+$('#form_company').val()+"&company_L="+$('#form_company_L').val()+"&recommend_userName="+$('#recommend_userName').val()+"&recommend_telPhone="+$('#recommend_telPhone').val()+"&addr="+$('#form_addr').val(),
+				async : false,
+				contentType: "application/x-www-form-urlencoded; charset=utf-8",
+				jsonpCallback: "userName="+$('#form_userName').val()+"&IDNumber="+$('#form_IDNumber').val()+"&telPhone="+$('#form_telPhone').val()+"&email="+$('#form_email').val()+"&company="+$('#form_company').val()+"&company_L="+$('#form_company_L').val()+"&recommend_userName="+$('#recommend_userName').val()+"&recommend_telPhone="+$('#recommend_telPhone').val()+"&addr="+$('#form_addr').val(),
 				success: function(data){ 
 					window.location.href="success.html";
 					//console.log(data);
