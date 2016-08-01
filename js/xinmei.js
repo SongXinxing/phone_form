@@ -121,7 +121,8 @@ $('input[type="button"]').click(function(){
 					//console.log(data);
 				}
 			});*/
-			var data0= {
+			//失败的跨域
+			/*var data0= {
 			 	"userName":$('#form_userName').val(),
 				"IDNumber":$('#form_IDNumber').val(),
 				"telPhone":$('#form_telPhone').val(),
@@ -138,10 +139,15 @@ $('input[type="button"]').click(function(){
 			 }
 			$.getJSON("https://songxinxing.github.io/phone_form/data/save.php",data,function(){
 				window.location.href="success.html";
-			});
+			});*/
 		//}
+	window.location.href(success.html);
     }
 });
+//表单获取交点时 清除提交失败按钮
+$('input').focus(function(){
+	$('#form_info').html('');
+})
 
 
 
