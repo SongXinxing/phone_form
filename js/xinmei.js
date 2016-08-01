@@ -121,7 +121,7 @@ $('input[type="button"]').click(function(){
 					//console.log(data);
 				}
 			});*/
-			var data= {
+			var data0= {
 			 	"userName":$('#form_userName').val(),
 				"IDNumber":$('#form_IDNumber').val(),
 				"telPhone":$('#form_telPhone').val(),
@@ -132,6 +132,10 @@ $('input[type="button"]').click(function(){
 				"recommend_telPhone":$('#recommend_telPhone').val(),
 				"addr":$('#form_addr').val()
 			 };
+			 var data=[];
+			 for(var k in data0){
+			 	data[data.length]={name:k,value:data0[k]}
+			 }
 			$.getJSON("https://songxinxing.github.io/phone_form/data/save.php",data,function(){
 				window.location.href="success.html";
 			});
