@@ -1,0 +1,56 @@
+/*.bg_color{*/
+    /*-webkit-background:url(../img/bg-1.jpg) no-repeat;*/
+    /*-moz-background:url(../img/bg-1.jpg) no-repeat;*/
+    /*background:url(../img/bg-1.jpg) no-repeat;*/
+    /*-webkit-background-size: cover;*/
+    /*-moz-background-size: cover;*/
+    /*background-size: cover;*/
+/*}*/
+
+
+/* 主页index背景 */
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+	-webkit-background:url(../img/bg_body01.png);
+    -moz-background:url(../img/bg_body01.png);
+    background:url(../img/bg_body01.png);
+	-webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+	background-size:100% 100%;/**/
+}
+p.pad{
+    padding: 5px 5px;
+	line-height:40px;
+}
+span.duihao{
+    display: inline-block;
+    width:14px;
+    height:14px;
+    margin-right:1em;
+    -webkit-background:url(../jqm/images/icons-png/check-black.png);
+    -moz-background:url(../jqm/images/icons-png/check-black.png);
+    background:url(../jqm/images/icons-png/check-black.png);
+}
+.font_normal{
+    font-weight:normal;
+}
+
+#rights_obligations_detail{
+	width:100%;
+	height:100%;
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index:1000;
+}
+
+/* 主页权利与义务弹出框背景 */
+#rights_obligations_detail_2{
+	-webkit-background:url(../img/bg_body01.png) repeat;
+    -moz-background:url(../img/bg_body01.png) repeat;
+    background:url(../img/bg_body01.png) repeat;
+	/*-webkit-background-size:100% 100%;
+    -moz-background-size:100% 100%;
+	background-size:100% 100%;*/
+}
+

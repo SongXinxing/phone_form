@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+	<style>
+		body{margin:0;}
+	</style>
+ </head>
+ <body>
+	<div data-role="page" class="bg_color">
+    <div class="ui-content" id="d1">
+    </div>
+	</div>
+ </body>
+ <script>
+	 function addSucc(){
+		var img=document.createElement('img');
+		img.src="./img/bg_body02.png";
+		img.setAttribute('alt',"登记成功，我们的工作人员会及时与您联系");
+		img.width=innerWidth;
+		img.height=innerHeight-5;
+		document.getElementById("d1").innerHTML="";
+		document.getElementById("d1").appendChild(img);
+	 }
+	 addSucc();
+	 window.onresize=function(){
+		addSucc();
+	 }
+ </script>
+</html>

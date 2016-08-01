@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="css/xinmei.css"/>
+    <link rel="stylesheet" href="jqm/jquery.mobile-1.4.5.css"/>
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="jqm/jquery.mobile-1.4.5.min.js"></script>
+    <!--<script src="js/angular.js"></script>-->
+</head>
+<body>
+<div data-role="page" class="bg_color">
+
+    <div class="ui-content">
+        <form>
+			<h3>推荐人：</h3>
+			<label for="recommend_userName">姓名：</label>
+            <input type="text" placeholder="请输入推荐人姓名" id="recommend_userName" name="recommend_userName"/>
+
+			<label for="recommend_telPhone">手机号：</label>
+            <input type="text" placeholder="请输入推荐人手机号" id="recommend_telPhone" name="recommend_telPhone"/>
+
+			<h3>个人信息：</h3>
+
+            <label for="form_company">您的单位：</label>
+            <select name="company" id="form_company" class="font_normal">
+                <option value="choose">请选择您的单位</option>
+                <option value="A">A.蚂蚁金服</option>
+                <option value="B">B.天弘基金</option>
+                <option value="C">C.国金鼎兴</option>
+                <option value="D">D.成都佳辰</option>
+                <option value="E">E.汤臣倍健</option>
+                <option value="F">F.腾邦国际</option>
+                <option value="G">G.新国都</option>
+                <option value="H">H.北京远望</option>
+                <option value="I">I.创联教育</option>
+                <option value="J">J.中财校友</option>
+                <option value="K">K.真爱梦想基金会</option>
+                <option value="L">L.其他</option>
+            </select>
+			<input id="form_company_L" name="form_company_L" type="text" style="display:none;" placeholder="所在单位或团体">
+
+			
+            <label for="form_userName">全名：</label>
+            <input type="text" placeholder="请输入您的姓名" id="form_userName" name="form_fullname"/>
+
+
+            <label for="form_IDNumber">身份证号：</label>
+            <input type="text" placeholder="请输入您的身份证号" id="form_IDNumber" name="form_IDNumber"/>
+
+
+            <label for="form_telPhone">手机号：</label>
+            <input type="text" placeholder="请输入您的手机号" id="form_telPhone" name="form_telPhone"/>
+
+
+            <label for="form_email">电子邮箱：</label>
+            <input type="text" placeholder="请输入您的邮箱" id="form_email" name="form_email"/>
+			
+			<label for="form_addr">地址</label>
+			<input type="text" id="form_addr" placeholder="XXX省XXX市" name="form_addr"/>
+
+
+            <!-- <label style="text-align:center;border:none;">
+                <input type="checkbox" id="isAgree" name="agree"/>我已阅读并同意“注册协议”和“会员权利”
+            </label> -->
+
+
+            <input type="button" value="完成登记"/>
+        </form>
+        <!-- <p style="text-align:center">信美，因信而美</p>
+        <p style="text-align:center">信美人寿相互保险社（筹）</p>
+        <p style="text-align:center">中国首家相互人寿保险组织</p> -->
+    </div>
+
+
+</div>
+
+<script src="js/xinmei.js"></script>
+</body>
+</html>
